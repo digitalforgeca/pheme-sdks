@@ -1,0 +1,29 @@
+# .NET build output
+bin/
+obj/
+nupkg/
+*.user
+*.suo
+.vs/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Rider / JetBrains
+.idea/
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+Thumbs.db

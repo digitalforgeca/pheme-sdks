@@ -1,0 +1,32 @@
+# Node
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+*.egg
+
+# Go
+/go/*/vendor/
+
+# Rust
+/rust/*/target/
+
+# C#
+bin/
+obj/
+*.user
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

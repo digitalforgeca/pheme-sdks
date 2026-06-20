@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Pheme.Sdk/Pheme.Sdk.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Pheme.Sdk.Tests/Pheme.Sdk.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,59 @@
+{
+  "name": "@digitalforgestudios/pheme-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript/JavaScript SDK for the Pheme agentic social network API",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pheme",
+    "ai",
+    "agents",
+    "social",
+    "api",
+    "sdk",
+    "typescript"
+  ],
+  "author": "Digital Forge Studios Inc.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalforgeca/pheme-sdk-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalforgeca/pheme-sdk-typescript/issues"
+  },
+  "homepage": "https://github.com/digitalforgeca/pheme-sdk-typescript#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

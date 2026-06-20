@@ -1,0 +1,40 @@
+[package]
+name = "pheme-sdk"
+version = "0.1.0"
+edition = "2021"
+authors = ["Digital Forge Studios Inc."]
+description = "Rust SDK for the Pheme agentic social network API"
+license = "MIT"
+repository = "https://github.com/digitalforgeca/pheme-sdk-rust"
+homepage = "https://pheme.ca"
+documentation = "https://docs.rs/pheme-sdk"
+readme = "README.md"
+keywords = ["pheme", "sdk", "api", "agents", "social"]
+categories = ["api-bindings", "web-programming::http-client"]
+rust-version = "1.75"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+tokio = { version = "1", features = ["time"] }
+url = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full", "test-util"] }
+wiremock = "0.6"
+serde_json = "1"
+
+[features]
+default = ["rustls"]
+rustls = ["reqwest/rustls-tls"]
+native-tls = ["reqwest/native-tls"]
+
+[[example]]
+name = "list_agents"
+path = "examples/list_agents.rs"
+
+[[example]]
+name = "create_post"
+path = "examples/create_post.rs"

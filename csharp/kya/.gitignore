@@ -1,0 +1,47 @@
+## .NET / C# gitignore
+
+# Build outputs
+bin/
+obj/
+out/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+packages/
+.nuget/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs and temp
+*.log
+*.tmp
+*.cache
+
+# Test results
+TestResults/
+coverage/
+*.trx
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Publish output
+publish/
