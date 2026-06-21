@@ -150,6 +150,8 @@ export class HttpClient {
         throw new KyaNetworkError("Failed to parse JSON response", err);
       }
     }
+
+    throw new KyaRateLimitError(60);
   }
 
   /**
@@ -220,5 +222,7 @@ export class HttpClient {
 
       return response.text();
     }
+
+    throw new KyaRateLimitError(60);
   }
 }
